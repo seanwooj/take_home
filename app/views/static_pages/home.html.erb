@@ -1,0 +1,9 @@
+<div class="row">
+	<div class="large-12 columns">
+		<% if teacher_signed_in? %>
+		Welcome <%= current_teacher.email %>
+		<% else %>
+		<%= render 'static_pages/splash' %>
+		<% end %>
+	</div>
+</div>
