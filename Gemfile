@@ -39,3 +39,4 @@ gem 'devise'
 
 # To use debugger
 # gem 'debugger'
+# fake
