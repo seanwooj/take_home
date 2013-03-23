@@ -13,6 +13,24 @@
 
 ActiveRecord::Schema.define(:version => 20130323180045) do
 
+  create_table "messages", :force => true do |t|
+    t.integer  "teacher_id"
+    t.date     "send_date"
+    t.string   "status"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "nuggets", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "subjects", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "teachers", :force => true do |t|
     t.string   "email",                  :default => "",    :null => false
     t.string   "encrypted_password",     :default => "",    :null => false
@@ -31,5 +49,10 @@ ActiveRecord::Schema.define(:version => 20130323180045) do
 
   add_index "teachers", ["email"], :name => "index_teachers_on_email", :unique => true
   add_index "teachers", ["reset_password_token"], :name => "index_teachers_on_reset_password_token", :unique => true
+
+  create_table "units", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end
