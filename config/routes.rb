@@ -3,8 +3,8 @@ EduApp::Application.routes.draw do
   devise_for :teachers
 
   get "static_pages/splash"
-
   get "static_pages/about"
+  get "send_message/index"
 
   root :to => 'static_pages#home'
   # The priority is based upon order of creation:
