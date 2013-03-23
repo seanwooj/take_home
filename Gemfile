@@ -22,6 +22,7 @@ group :assets do
   gem 'zurb-foundation', '~> 4.0.0'
 end
 
+# gem 'clever-ruby'
 gem 'jquery-rails'
 gem 'devise'
 
@@ -39,3 +40,4 @@ gem 'devise'
 
 # To use debugger
 # gem 'debugger'
+# fake
