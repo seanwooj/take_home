@@ -1,34 +1,49 @@
 <div class="row">
+
+  <ul class="breadcrumbs">
+    <li><a href="#">4th grade</a></li>
+    <li><a href="#">Physical Science</a></li>
+    <li class="current"><a href="#">Series & Parallel circuits</a></li>
+  </ul>
+
   <div class="large-12 columns">
 
-    <% if teacher_signed_in? %>
+          <div class="panel">
 
-    <div class="row">
-      <div class="large-4 small-12 columns">
-        <div class="hide-for-small panel">
-          <h5 class="subheader">Browse all the topics and start sending messages to parents or</h5>
-          <%= link_to 'add a new subject', new_subject_path %>
+            <h5 class="subheader">Circuits are everywhere!  It is hard to imagine a world without lights, computers, and cellphones.  None of these would be possible without a circuit, a connection from the negative side of a battery to a light and back the positive side of a battery.
+            <br>There are two major types of circuits: <b>series and parallel circuits</b>.  The difference in the circuits is how the lights are connected.
+            </h5>
+          </div>
+
         </div>
-      </div>
-      <div class="large-8 columns">
-        <div class="row">
-          <% @nuggets.each do |nugget| %>
-            <div class="large-4 small-6 columns">
-              <%= link_to "See", [@subject, @unit, nugget] %>
+
+
+            <div class="large-6 small-6 columns">
+              <%= image_tag("pic3.gif", :height => "1") %>
               <div class="panel">
-                <h5><%= nugget.title %></h5>
+                <p>In series circuits electrons flow in one path through the light(s).  For each light you add on to a series circuit there will be more resistance, so the electrons will flow through the lights slower.  This will lead to dimmer lights.</p>
               </div>
             </div>
-          <% end %>
+
+            <div class="large-6 small-6 columns">
+              <%= image_tag("pic4.gif") %>
+              <div class="panel">
+                <p>In parallel circuits electrons can flow through multiple paths through the lights.  For each light you add on there will be less resistance to electrons, since adding another path for electrons to travel down.  Although the parallel circuit will be brighter than the series circuit shown, the battery will die quicker.</p>
+              </div>
+            </div>
+
+          <div class="large-12 columns">  
+
+            <p><b>Note:</b> Light is just one example of an electrical load, which uses the power from moving electrons.  Parallel and series circuits can power motors, toasters, or a number of other electrical loads.  Alternating current sources like the power outlet is another source of electron flow beyond the battery.</p>
+          </div>
+
+          <div class="large-12 columns">  
+            <div class="row">
+              <div class="small-6 small-centered columns"><p><a href="#" class="button">Experiment &rarr;</a></p></div>
+            </div>
+          </div>
         </div>
-       
 
-        <% else %>
-        <%= render 'static_pages/splash' %>
-
-        <% end %>
 
       </div>
-    </div>
-  </div>
-</div>
+
