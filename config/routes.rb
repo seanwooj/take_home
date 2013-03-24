@@ -12,6 +12,7 @@ EduApp::Application.routes.draw do
 
   get "static_pages/splash"
   get "static_pages/about"
+  get "static_pages/pricing"
   get "send_message/index"
 
   root :to => 'subjects#index'
