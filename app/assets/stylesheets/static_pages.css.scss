@@ -7,6 +7,7 @@
 	background: image-url("masthead.jpg");
 	padding: 20px 0 40px 0;
 	background-size: cover;
+	background-attachment: fixed;
 
 	.masthead-headers {
 		padding-top: 200px;
@@ -36,6 +37,8 @@
 
 .splash-info {
 	background: #3498DB;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	h3 {
 		margin-top: 20px;
 		color: white;
@@ -45,4 +48,43 @@
 	.splash-images {
 		margin-top: 26px;
 	}
+}
+
+.splash-info.white {
+	background: white;
+	h3 {
+		color: #3498DB;
+	}
+}
+
+.splash-info.off-white {
+	background: #f7f7f7;
+	h3 {
+		color: #3498DB;
+	}
+}
+
+.splash-info.dark {
+	padding-top: 40px;
+	background: #4c4b4b;
+	h3 {
+		color: #3498DB;
+	}
+	.large.button {
+		background: #3498DB;
+		border: none;
+		border-bottom: #2980B9 5px solid;
+		display: inline-block;
+	}
+	p {
+		color: white;
+		font-family: 'Wellfleet', cursive;
+		font-size: 18px;
+		display: inline-block;
+		margin: 0 20px 0 20px;
+	}
+}
+
+.legitimizer-container img {
+	float: left;
 }
