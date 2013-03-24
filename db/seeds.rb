@@ -15,18 +15,17 @@ Subject.create(
     { 	:title => "physical science", 
     	:image => "http://www.wlac.edu/science/images/Physics.jpg",
     	:units_attributes => [
-    		{ 	:title => 'Electricity & Magnetism',
+    		{ 	:title => 'Series & Parallel Circuits',
     			:nuggets_attributes => [
-    				{ 	:title => 'Series & Parallel Circuits' },
-    				{ 	:title => 'Compasses & Magnetic Effects' },
-    				{ 	:title => 'Electric Currents & Magnetic Fields' },
-    				{ 	:title => 'Electromagnets in Circuits' },
-    				{ 	:title => 'Electrostatics' },
-    				{ 	:title => 'Magnetic Force' },
-    				{ 	:title => 'Electrical Energy Conversions' }
+    				{ 	:title => 'A' },
+    				{ 	:title => 'B' }
   				] },
-    		{ 	:title => 'unit2' },
-    		{ 	:title => 'unit3' }
+    		{ 	:title => 'Compasses & Magnetic Effects' },
+    		{ 	:title => 'Electric Currents & Magnetic Fields' },
+            {   :title => 'Electromagnets in Circuits' },
+            {   :title => 'Electrostatics' },
+            {   :title => 'Magnetic Force' },
+            {   :title => 'Electrical Energy Conversions' }
   		] },
     { :title => "chemistry", :image => "http://b.vimeocdn.com/ps/331/074/3310743_300.jpg" },
     { :title => "english", :image => "http://media-social.s-msn.com/images/blogs/00120065-0000-0000-0000-000000000000_469b5687-f4ab-4992-a2ac-46c322b7a161_20130208193903_HughGrant_020813_RM_300.jpg" },

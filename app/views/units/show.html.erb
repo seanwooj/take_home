@@ -6,17 +6,17 @@
     <div class="row">
       <div class="large-4 small-12 columns">
         <div class="hide-for-small panel">
-          <h3><%= @subject.title %></h3>
           <h5 class="subheader">Browse all the topics and start sending messages to parents or</h5>
-          <%= link_to 'add a new unit', new_subject_unit_path(params[:id]) %>
+          <%= link_to 'add a new subject', new_subject_path %>
         </div>
       </div>
       <div class="large-8 columns">
         <div class="row">
-          <% @units.each do |unit| %>
+          <% @nuggets.each do |nugget| %>
             <div class="large-4 small-6 columns">
+              <%= link_to "See", [@subject, @unit, nugget] %>
               <div class="panel">
-                <h5><%= link_to(unit.title, [@subject,unit]) %></h5>
+                <h5><%= nugget.title %></h5>
               </div>
             </div>
           <% end %>
@@ -25,6 +25,7 @@
 
         <% else %>
         <%= render 'static_pages/splash' %>
+
         <% end %>
 
       </div>

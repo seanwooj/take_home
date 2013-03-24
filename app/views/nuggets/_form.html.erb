@@ -1,0 +1,22 @@
+<%= form_for(@nugget) do |f| %>
+  <% if @nugget.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@nugget.errors.count, "error") %> prohibited
+        this subject from being saved:</h2>
+    <ul>
+    <% @nugget.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+ 
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>

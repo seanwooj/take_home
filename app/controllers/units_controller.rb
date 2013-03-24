@@ -5,7 +5,9 @@ class UnitsController < ApplicationController
 	end
 
 	def show
-
+		@subject = Subject.find(params[:subject_id])
+		@unit = Unit.find(params[:id])
+  		@nuggets = @unit.nuggets
 	end
 
 	def new
