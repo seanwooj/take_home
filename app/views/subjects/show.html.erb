@@ -1,7 +1,43 @@
-<p>
-  <b>Subject:</b>
-  <%= @subject.title %>
-</p>
+
  
-<%= link_to 'Edit', edit_subject_path(@subject) %> |
-<%= link_to 'Back', subjects_path %>
+<% if teacher_signed_in? %>
+	<%= link_to 'Edit', edit_subject_path(@subject) %> |
+	<%= link_to 'Back', subjects_path %>
+<% end %>
+
+
+
+<div class="row">
+  <div class="large-12 columns">
+
+    <% if teacher_signed_in? %>
+
+    <div class="row">
+      <div class="large-4 small-12 columns">
+        <div class="hide-for-small panel">
+          <h3><%= @subject.title %> Units</h3>
+          <h5 class="subheader">Browse all the topics and start sending messages to parents or</h5>
+          <%= link_to 'add a new unit', new_subject_unit_path(params[:id]) %>
+        </div>
+      </div>
+      <div class="large-8 columns">
+        <div class="row">
+          <% @units.each do |unit| %>
+            <div class="large-4 small-6 columns">
+              <div class="panel">
+                <h5><%= link_to(unit.title, [@subject,unit]) %></h5>
+              </div>
+            </div>
+          <% end %>
+        </div>
+       
+
+        <% else %>
+        <%= render 'static_pages/splash' %>
+
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -19,8 +19,9 @@ ActiveRecord::Schema.define(:version => 20130324020123) do
     t.integer  "message_id"
     t.integer  "position"
     t.integer  "nugget_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.string   "content_type"
   end
 
   create_table "messages", :force => true do |t|
