@@ -1,5 +1,5 @@
 class Nugget < ActiveRecord::Base
-  # attr_accessible :title, :body
+ 	attr_accessible :title, :body
   
-  belongs_to :unit
+ 	belongs_to :unit
 end

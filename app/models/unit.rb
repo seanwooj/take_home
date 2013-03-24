@@ -1,6 +1,6 @@
 class Unit < ActiveRecord::Base
-  # attr_accessible :title, :body
-  
-  belongs_to :subject
   has_many :nuggets
+  attr_accessible :title, :body, :nuggets_attributes
+  belongs_to :subject
+  accepts_nested_attributes_for :nuggets  
 end
