@@ -1,3 +1,4 @@
+<div class="background <%= @subject.title %>">
 <div class="row">
   <div class="large-12 columns">
 
@@ -7,14 +8,14 @@
       <div class="large-4 small-12 columns">
         <div class="hide-for-small panel">
           <h3><%= @subject.title %></h3>
-          <h5 class="subheader">In 4th grade, kids learn about electricity and magnetism </h5>
+          <h4 class="subheader">In 4th grade, kids learn about electricity and magnetism </h4>
         </div>
       </div>
       <div class="large-8 columns">
         <div class="row">
-          <% @units.each do |unit| %>
+          <% @units.each_with_index do |unit, index| %>
             <div class="large-4 small-6 columns">
-              <div class="panel">
+              <div class="panel <%= @colors[index.modulo(5)] %>">
                 <h5><%= link_to(unit.title, [@subject,unit]) %></h5>
               </div>
             </div>
@@ -29,4 +30,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>

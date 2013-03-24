@@ -5,6 +5,7 @@
 .background {
 	background: #4c4b4b;
 	padding-top: 40px;
+	min-height: 480px;
 
 	.panel {
 		border: none;
@@ -13,5 +14,12 @@
 		h5 {
 			color: rgba(255,255,255,0.9);
 		}
+		a {
+			color: rgba(255,255,255,0.9);	
+		}
 	}
+}
+
+.physical {
+	
 }

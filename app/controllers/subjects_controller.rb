@@ -39,6 +39,7 @@ end
 def show
   @subject = Subject.find(params[:id])
   @units = @subject.units
+  @colors = %w[t e b o r]
  
   respond_to do |format|
     format.html  # show.html.erb
