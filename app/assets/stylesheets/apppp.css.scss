@@ -10,6 +10,15 @@
 		}
 	}
 
+	.name {
+		h1 {
+			a { 
+				font-family: 'Wellfleet' ;
+				font-weight: normal;
+			}
+		}
+	}
+
 	.right {
 		background: #2C3E50;
 		.has-form {
@@ -20,5 +29,28 @@
 }
 
 footer {
-	border-top: 5px solid black;
+	background: #403f3f;
+	padding-top: 20px;
+}
+
+/* Colors */
+
+.t {
+	background: #1ABC9C;
+}
+
+.e {
+	background: #2ECC71;
+}
+
+.b {
+	background: #3498DB;
+}
+
+.o {
+	background: #F39C12;
+}
+
+.r {
+	background: #E74C3C;
 }
