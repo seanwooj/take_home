@@ -1,0 +1,7 @@
+<h1>BOOP</h1>
+<%= @message.id %>
+<% @message_parts.each do |message_part| %>
+<div class="message_part">
+	<%= show_correct_content(message_part) %>
+</div>
+<% end %>

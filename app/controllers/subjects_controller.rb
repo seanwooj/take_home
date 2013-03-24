@@ -37,6 +37,7 @@ end
 
 def show
   @subject = Subject.find(params[:id])
+  @units = @subject.units
  
   respond_to do |format|
     format.html  # show.html.erb
