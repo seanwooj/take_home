@@ -24,9 +24,8 @@
         <div class="row">
           <% @units.each do |unit| %>
             <div class="large-4 small-6 columns">
-              
               <div class="panel">
-                <h5><%= unit.title %></h5>
+                <h5><%= link_to(unit.title, [@subject,unit]) %></h5>
               </div>
             </div>
           <% end %>

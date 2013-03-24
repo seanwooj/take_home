@@ -9,7 +9,8 @@ class UnitsController < ApplicationController
 	end
 
 	def new
-	  @subject = Subject.new
+	  @subject = Subject.find(params[:subject_id])
+	  @unit = @subject.units.build
 	 
 	  respond_to do |format|
 	    format.html  # new.html.erb
@@ -18,7 +19,9 @@ class UnitsController < ApplicationController
 	end
 
 	def create
-	  @subject = Subject.new(params[:subject])
+	  @subject = Subject.find(params[:subject_id])
+	  @unit = @subject.units.build(params[:unit])
+	  @unit.save
 	 
 	  respond_to do |format|
 	    if @subject.save
