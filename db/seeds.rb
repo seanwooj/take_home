@@ -9,9 +9,8 @@
 
 Subject.create( 
   [ 
-    { :title => "grammar", :image => "http://heartofenglish.files.wordpress.com/2012/09/avoid-grammar-police-there-theyre-800x8001.jpg" },
-    { :title => "spelling", :image => "http://www.picideas.net/wp-content/uploads/design-elements-vector-origami-ribbon-26-english-letters-and-numbers-vector-3-15-13177-images-300x300.jpg" },
-    { :title => "math", :image => "http://www.math.uiowa.edu/mathclub/images/home_01.jpg" },
+    { :title => "life science", :image => "http://www.sociedadtecnologica.com/wp-content/uploads/2012/09/adn-300x300.png" },
+    { :title => "earth science", :image => "http://macaronikid.com/static/town/anchorage/article-368590-1349851989.24" },
     { 	:title => "physical science", 
     	:image => "http://www.wlac.edu/science/images/Physics.jpg",
     	:units_attributes => [
@@ -27,7 +26,5 @@ Subject.create(
             {   :title => 'Magnetic Force' },
             {   :title => 'Electrical Energy Conversions' }
   		] },
-    { :title => "chemistry", :image => "http://b.vimeocdn.com/ps/331/074/3310743_300.jpg" },
-    { :title => "english", :image => "http://media-social.s-msn.com/images/blogs/00120065-0000-0000-0000-000000000000_469b5687-f4ab-4992-a2ac-46c322b7a161_20130208193903_HughGrant_020813_RM_300.jpg" },
   ]
 )
