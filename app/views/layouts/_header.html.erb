@@ -16,8 +16,6 @@
       <li class="has-form">
         <% if teacher_signed_in? %>
           <%= link_to "Sign out", destroy_teacher_session_path, :class => "button", :method => "delete" %>
-        <% else %>
-          <%= link_to "Sign in", new_teacher_session_path, :class => "button" %>
         <% end %>
       </li>
     </ul>

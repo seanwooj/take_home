@@ -1,6 +1,7 @@
 .top-bar {
-	background: #2C3E50;
-	border-bottom: 5px solid #34495E;
+	background: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	margin-bottom: 0;
 
 	ul {
 		.divider {
@@ -12,11 +13,12 @@
 	.right {
 		background: #2C3E50;
 		.has-form {
-			background: #2C3E50;
-			border-bottom: 5px solid #34495E;
+			background: #3498DB;
+			border-bottom: 5px solid #2980B9;
 		}
 	}
 }
 
 footer {
+	border-top: 5px solid black;
 }
