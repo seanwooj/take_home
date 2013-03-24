@@ -2,6 +2,7 @@ class SubjectsController < ApplicationController
 
 def index
   	@subjects = Subject.all
+    @colors = %w[t e b o r]
  
   	respond_to do |format|
     	format.html  # index.html.erb

@@ -1,3 +1,17 @@
 // Place all the styles related to the subjects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.background {
+	background: #4c4b4b;
+	padding-top: 40px;
+
+	.panel {
+		border: none;
+		box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+		border-bottom: 5px solid rgba(0,0,0,0.3);
+		h5 {
+			color: rgba(255,255,255,0.9);
+		}
+	}
+}
