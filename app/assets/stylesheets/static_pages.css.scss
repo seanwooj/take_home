@@ -4,7 +4,7 @@
 
 
 .masthead {
-	background: url("http://kinhr.com/wp-content/uploads/2013/01/kin-splash-hero.jpg");
+	background: image-url("images/masthead.jpg");
 	padding: 20px 0 40px 0;
 	background-size: cover;
 
@@ -41,5 +41,8 @@
 		color: white;
 		font-family: 'Wellfleet', cursive;
 		font-weight: normal;
+	}
+	.splash-images {
+		margin-top: 26px;
 	}
 }
