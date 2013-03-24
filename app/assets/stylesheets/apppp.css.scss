@@ -1,0 +1,22 @@
+.top-bar {
+	background: #2C3E50;
+	border-bottom: 5px solid #34495E;
+
+	ul {
+		.divider {
+			border-left: #34495E;
+			border-right: #34495E;
+		}
+	}
+
+	.right {
+		background: #2C3E50;
+		.has-form {
+			background: #2C3E50;
+			border-bottom: 5px solid #34495E;
+		}
+	}
+}
+
+footer {
+}
