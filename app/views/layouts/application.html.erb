@@ -24,8 +24,10 @@
 	<%= render 'layouts/header' %>
 
 	<% if notice || alert %>
+	<div class="alert-box">
 		<p class="notice"><%= notice %></p>
 	  <p class="alert"><%= alert %></p>
+	</div>
 	<% end %>
 
     	<%= yield %>
@@ -35,4 +37,9 @@
 </body>
 
 <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+<script>
+	$(function(){
+		$(".alert-box").hide().slideDown(3000).slideUp(1000);
+	});
+</script>
 </html>
